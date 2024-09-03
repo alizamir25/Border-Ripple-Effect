@@ -39,13 +39,13 @@
       inherits: false;
     }
     button{
-      --_percentage: calc(100% / var(--ripples, 1));
+      --_percentage: calc(100%/var(--ripples,1));
       --ripple-speed: 2s;
-      background: linear-gradient(var(--button-bg), var(--button-bg)) padding-box,
+      background: linear-gradient(var(--button-bg),var(--button-bg)) padding-box,
         repeating-conic-gradient(
             from var(--gradient-angle),
             transparent,
-            var(--button-bg) calc(var(--_percentage) * 0.5),
+            var(--button-bg)calc(var(--_percentage)*0.5),
             transparent var(--_percentage)
           )
           border-box;
@@ -61,10 +61,10 @@
       aspect-ratio: 1;
       background: linear-gradient(
         transparent,
-        hsla(0 0% 100% / 0.1),
+        hsla(0 0% 100%/0.1),
         transparent
       );
-      animation: calc((var(--ripple-speed) * 3) / var(--ripples)) shimmer linear
+      animation: calc((var(--ripple-speed)*3)/var(--ripples))shimmer linear
         infinite;
       pointer-events: none;
     }
