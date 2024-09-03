@@ -1,36 +1,36 @@
 *{
-    box-sizing: border-box;
+    box-sizing:border-box;
   }
   html,
   body{
-    height: 100%;
+    height:100%;
   }
   body{
-    display: grid;
-    place-items: center;
-    color: white;
-    background: #091029;
-    font-family: "Cabinet Grotesk", sans-serif;
+    display:grid;
+    place-items:center;
+    color:white;
+    background:#091029;
+    font-family:"Cabinet Grotesk", sans-serif;
     -webkit-font-smoothing: antialiased;
   }
   main{
-    display: grid;
-    gap: 2rem;
-    padding: 1rem;
+    display:grid;
+    gap:2rem;
+    padding:1rem;
   }
   button{
-    --button-bg: rgb(0, 132, 255);
-    position: relative;
-    overflow: hidden;
-    cursor: pointer;
-    padding: 1.5rem 2rem;
-    font-family: inherit;
-    font-size: 1.5rem;
-    line-height: 1;
-    border: 1px solid transparent;
-    border-radius: 0.5rem;
-    background: var(--button-bg);
-    color: var(--button-fg, inherit);
+    --button-bg:rgb(0, 132, 255);
+    position:relative;
+    overflow:hidden;
+    cursor:pointer;
+    padding:1.5rem 2rem;
+    font-family:inherit;
+    font-size:1.5rem;
+    line-height:1;
+    border:1px solid transparent;
+    border-radius:0.5rem;
+    background:var(--button-bg);
+    color:var(--button-fg, inherit);
   }
   @media (prefers-reduced-motion: no-preference){
     @property --gradient-angle{
