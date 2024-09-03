@@ -32,16 +32,16 @@
     background:var(--button-bg);
     color:var(--button-fg, inherit);
   }
-  @media (prefers-reduced-motion: no-preference){
+  @media(prefers-reduced-motion: no-preference){
     @property --gradient-angle{
-      syntax: "<angle>";
-      initial-value: 0deg;
-      inherits: false;
+      syntax:"<angle>";
+      initial-value:0deg;
+      inherits:false;
     }
     button{
-      --_percentage: calc(100%/var(--ripples,1));
-      --ripple-speed: 2s;
-      background: linear-gradient(var(--button-bg),var(--button-bg)) padding-box,
+      --_percentage:calc(100%/var(--ripples,1));
+      --ripple-speed:2s;
+      background:linear-gradient(var(--button-bg),var(--button-bg)) padding-box,
         repeating-conic-gradient(
             from var(--gradient-angle),
             transparent,
@@ -49,7 +49,7 @@
             transparent var(--_percentage)
           )
           border-box;
-      animation: var(--ripple-speed) ripple linear infinite;
+      animation:var(--ripple-speed) ripple linear infinite;
     }
     button::before{
       content: "";
