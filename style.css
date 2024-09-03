@@ -9,7 +9,7 @@
     display: grid;
     place-items: center;
     color: white;
-    background: #02040c;
+    background: #091029;
     font-family: "Cabinet Grotesk", sans-serif;
     -webkit-font-smoothing: antialiased;
   }
@@ -19,7 +19,7 @@
     padding: 1rem;
   }
   button{
-    --button-bg: blue;
+    --button-bg: rgb(0, 132, 255);
     position: relative;
     overflow: hidden;
     cursor: pointer;
