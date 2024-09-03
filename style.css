@@ -64,9 +64,9 @@
         hsla(0 0% 100%/0.1),
         transparent
       );
-      animation: calc((var(--ripple-speed)*3)/var(--ripples))shimmer linear
+      animation:calc((var(--ripple-speed)*3)/var(--ripples))shimmer linear
         infinite;
-      pointer-events: none;
+      pointer-events:none;
     }
     @keyframes ripple{
       to{
