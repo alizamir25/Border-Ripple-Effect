@@ -1,12 +1,10 @@
 * {
     box-sizing: border-box;
   }
-  
   html,
   body {
     height: 100%;
   }
-  
   body {
     display: grid;
     place-items: center;
@@ -15,13 +13,11 @@
     font-family: "Cabinet Grotesk", sans-serif;
     -webkit-font-smoothing: antialiased;
   }
-  
   main {
     display: grid;
     gap: 2rem;
     padding: 1rem;
   }
-  
   button {
     --button-bg: blue;
     position: relative;
@@ -36,14 +32,12 @@
     background: var(--button-bg);
     color: var(--button-fg, inherit);
   }
-  
   @media (prefers-reduced-motion: no-preference) {
     @property --gradient-angle {
       syntax: "<angle>";
       initial-value: 0deg;
       inherits: false;
     }
-  
     button {
       --_percentage: calc(100% / var(--ripples, 1));
       --ripple-speed: 2s;
@@ -57,7 +51,6 @@
           border-box;
       animation: var(--ripple-speed) ripple linear infinite;
     }
-  
     button::before {
       content: "";
       position: absolute;
@@ -75,13 +68,11 @@
         infinite;
       pointer-events: none;
     }
-  
     @keyframes ripple {
       to {
         --gradient-angle: 360deg;
       }
     }
-  
     @keyframes shimmer {
       to {
         rotate: 360deg;
