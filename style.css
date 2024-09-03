@@ -11,7 +11,7 @@
     color:white;
     background:#091029;
     font-family:"Cabinet Grotesk", sans-serif;
-    -webkit-font-smoothing: antialiased;
+    -webkit-font-smoothing:antialiased;
   }
   main{
     display:grid;
@@ -41,7 +41,7 @@
     button{
       --_percentage:calc(100%/var(--ripples,1));
       --ripple-speed:2s;
-      background:linear-gradient(var(--button-bg),var(--button-bg)) padding-box,
+      background:linear-gradient(var(--button-bg),var(--button-bg))padding-box,
         repeating-conic-gradient(
             from var(--gradient-angle),
             transparent,
@@ -49,7 +49,7 @@
             transparent var(--_percentage)
           )
           border-box;
-      animation:var(--ripple-speed) ripple linear infinite;
+      animation:var(--ripple-speed)ripple linear infinite;
     }
     button::before{
       content:"";
